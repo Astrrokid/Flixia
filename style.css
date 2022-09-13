@@ -1,0 +1,116 @@
+body{
+    /* background-color: rgb(251,187,71); */
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(251,187,71);
+}
+ul{
+    list-style: none;
+}
+
+
+/* HEADER */
+.headerContainer{
+    display: flex;
+    justify-content: space-between; 
+    gap: 5%;
+    border: 1px solid black;
+}
+.logo{
+    width: 17%;
+}
+nav{
+    width: 35%;
+}
+
+.headerContainer ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+    padding: 0 auto;
+    
+}
+.nav a:hover{
+    color: rgb(251,187,71);
+}
+
+.headerContainer li a, .signup{
+    color: rgb(26, 24, 24);
+}
+.loginSignup{
+    /* width: 40%; */
+    display: flex;
+    padding-top: 10px;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    text-align: end;
+    margin-right: 0;
+   
+   
+}
+.login{
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+    
+}
+.signup{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(251,187,71);
+    border-radius: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/* LOGIN FORM */
+.formWrapper{
+    
+    text-align: center;
+    
+}
+.formContainer{
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 1);
+    
+}
+
+
+form{
+    display: flex;
+    /* width: 80%; */
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 400px;
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+
+}
+
+input[type=email], input[type=password], input[type=button]{
+   width: 100%;
+   margin: 8px 0;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+input[type=email], input[type=password]{
+    border-bottom: 1px solid rgba(251,187,71,0.9);
+}
+input[type=button]{
+    height: 55px;
+    background-color: rgba(251,187,71,0.9);
+    margin-top: 30px;
+    border-radius: 50px;
+}
+.remMe{
+    display: flex;
+    justify-content: space-between;
+    
+}
