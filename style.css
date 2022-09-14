@@ -1,7 +1,13 @@
+*{
+    
+    
+}
+
 body{
     color: rgb(19,32,60);
-    margin: 0;
+    margin-top: 0rem;
     padding: 0;
+    font-family: 'combo', sans-serif;
     
 }
 
@@ -15,6 +21,9 @@ ul{
 
 
 /* HEADER */
+
+
+
 .headerContainer{
     display: flex;
     justify-content: space-between; 
@@ -23,6 +32,8 @@ ul{
     backdrop-filter: blur(8px);
     position: fixed;
     width: 99%;
+    z-index: 2;
+
 }
 .logo{
     width: 17%;
@@ -81,6 +92,28 @@ nav{
     color: rgb(222, 84, 240);
     
     transition: 700ms;
+}
+/* SECTION MAIN */
+main{
+    padding: 1% 0;
+    margin: 1% 0;
+}
+.sectionMain{
+    display: flex;
+    margin-top: ;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+    padding-top: 12%;
+    justify-content: flex-end;
+    background-image: linear-gradient(45deg, rgb(222, 84, 240), rgb(71, 170, 251));
+}
+.para{
+    width: 50%;
+    text-align: start;
+}
+.mainImg{
+    width: 40%;
+    justify-items: end;
 }
 /* PLANS */
 .sectionContainer{
@@ -189,4 +222,30 @@ input[type=button]{
 }
 form p{
     margin-top: 2.5rem;
+}
+/* FOOTER */
+footer{
+    text-align: center;
+    background-color: rgb(19,32,60);
+    padding-top: 2%;
+    color: antiquewhite;
+    margin-top: 1rem;
+}
+footer a{
+    color: antiquewhite;
+}
+footer a:hover{
+    color: rgb(251,187,71);
+}
+.footer1, .footer2{
+    display: flex;
+    justify-content: center;
+    gap:3%;
+} 
+.footer1{
+    padding-bottom: 3%;
+
+}
+.contact a{
+    padding-right: 1.5%;
 }
