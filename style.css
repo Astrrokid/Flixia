@@ -97,9 +97,12 @@ nav{
     padding: 1%;
     border-radius: 35px;
     background-image: linear-gradient(45deg, rgb(222, 84, 240), rgb(71, 170, 251));
+    font-size: 0.92rem;
+    padding-bottom: 2%;
 }
 .trial{
     font-size: 0.5rem;
+    
 }
 .planButton{
     display: inline-block;
@@ -111,12 +114,33 @@ nav{
     text-align: center;
     color: rgb(19,32,60);
 }
+/* STREAM ACROSS DEVICES */
+.stream{
+    text-align: center;
+    background-color: rgb(245,245,247);
+    width: 80%;
+    margin: 5rem auto 0 auto;
+    padding: 3.5rem 0;
+}
 
+.deviceContainer{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    
+}
+.devices{
+    width: 15%;
+}
+#dev p{
+    margin: 0 auto;
+}
 
 /* LOGIN FORM */
 .formWrapper{
     
     text-align: center;
+    margin-top: 1rem;
     
 }
 .formContainer{
@@ -128,6 +152,7 @@ nav{
 }
 
 
+
 form{
     display: flex;
     flex-direction: column;
@@ -135,6 +160,7 @@ form{
     max-width: 400px;
     backdrop-filter: blur(8px);
     padding: 2rem;
+    background-color: rgb(245,245,247);
 
 }
 
@@ -159,5 +185,8 @@ input[type=button]{
 .remMe{
     display: flex;
     justify-content: space-between;
-    
+    background-color: rgb(245,245,247);
+}
+form p{
+    margin-top: 2.5rem;
 }
