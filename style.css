@@ -48,10 +48,8 @@ nav{
     color: rgb(26, 24, 24);
 }
 .loginSignup{
-    /* width: 40%; */
     display: flex;
     padding-top: 10px;
-    /* justify-content: space-between; */
     gap: 1rem;
     text-align: end;
     margin-right: 0;
@@ -67,18 +65,20 @@ nav{
 .signup{
     width: 200px;
     height: 50px;
-    background-color: rgb(251,187,71);
     border-radius: 50px;
     line-height: 50px;
     text-align: center;
+    background-image: linear-gradient(60deg, rgb(251, 137, 71), rgb(251,187,71));
+
 }
-.signup:hover, input[type=button]:hover .planButton:hover{
+.signup:hover, input[type=button]:hover, .planButton:hover{
     color: rgb(251,187,71);
-    background-color: rgb(19,32,60);
+    background-image: linear-gradient(45deg, rgb(222, 84, 240), rgb(71, 170, 251));
     transition: 700ms;
+    
 }
 .login:hover, .formWrapper a:hover{
-    color: rgb(19,32,60);
+    color: rgb(222, 84, 240);
     
     transition: 700ms;
 }
@@ -92,16 +92,20 @@ nav{
 }
 .plan{
     width: 25%;
-    background-color: rgb(31, 43, 70);
+    background-color: rgb(100, 128, 192);
     color: beige;
     padding: 1%;
     border-radius: 35px;
+    background-image: linear-gradient(45deg, rgb(222, 84, 240), rgb(71, 170, 251));
+}
+.trial{
+    font-size: 0.5rem;
 }
 .planButton{
     display: inline-block;
     width: 150px;
     height: 50px;
-    background-color: rgb(251,187,71);
+    background-image: linear-gradient(60deg, rgb(251, 137, 71), rgb(251,187,71));
     border-radius: 50px;
     line-height: 50px;
     text-align: center;
@@ -146,7 +150,7 @@ input[type=email], input[type=password]{
 }
 input[type=button]{
     height: 55px;
-    background-color: rgba(251,187,71,0.9);
+    background-image: linear-gradient(60deg, rgb(251, 137, 71), rgb(251,187,71));
     margin-top: 30px;
     border-radius: 50px;
 }
