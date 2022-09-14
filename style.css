@@ -28,7 +28,6 @@ ul{
     display: flex;
     justify-content: space-between; 
     gap: 5%;
-    border: 1px solid black;
     backdrop-filter: blur(8px);
     position: fixed;
     width: 99%;
