@@ -7,6 +7,10 @@ body{
     
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
     color: rgb(251,187,71);
@@ -85,9 +89,7 @@ nav{
     transition: 700ms;
 }
 /* SECTION MAIN */
-.sectionMain{
-    
-}
+
 
 /* gallery section */
 .galleryConcert{
@@ -95,8 +97,9 @@ nav{
 }
 
 #galleryPart2{
-    display: flex;
-    padding: 1rem 6rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    padding: 1rem 12rem; 
 }
 
 #galleryPart2 p{
@@ -277,8 +280,6 @@ nav{
     
 }
 
-
-
 form{
     display: flex;
     flex-direction: column;
@@ -350,5 +351,122 @@ footer a:hover{
     }
     nav{
         width: 20%;
+    }
+    .sectionMain{
+        padding: 12rem 8rem;
+    }
+    .concertSection{
+        place-content: center;
+        padding: 5rem 16rem;
+    }
+    .sectionContainer{
+        justify-content: center;
+        gap: 1rem;
+        padding-right: 2rem;
+    }
+}
+@media screen and (max-width:992px){
+    /* fix color */
+    .para p{
+        color: rgb(209,147,37);  
+    }
+    
+    .loginSignup{
+        margin-right: 5rem;
+    }
+    #nextConcertSection{
+        padding: 5rem 0rem;
+    }
+    .concertPhoto{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width:768px){
+        nav{
+            display: none;
+        }
+        .concert1{
+            flex-direction: column;
+            text-align: center;
+        }
+        .concert1-B{
+            flex-direction: column;
+        }
+        .concert1-B img{
+            margin: 0 auto;
+        }
+        .concert1-C{
+            width: 100%;
+        }
+        .concert1-A, .concert1-B, .concert1-C, .concert1-D.concert1-E{
+            padding: 0;
+        }
+        #nextConcertSection{
+            padding: 0;
+        }
+        .concertPhoto{
+            place-content: center;
+        }
+    }
+    @media screen and (max-width:576px){
+        .logo{
+            width: 30%;
+        }
+        .loginSignup{
+            margin-right: 3rem;
+        }
+        .para h2{
+            font-size: 1.9rem;
+        }
+        .sectionMain{
+            padding: 10rem 2rem;
+        }
+        .para p{
+            width: 100%;
+        }
+        #galleryPart2{
+            padding: 1rem 0;
+        }
+        .concertSection p{
+            padding: 5rem 18rem;
+        }
+        .sectionContainer{
+            flex-direction: column;
+        }
+        .plan{
+            align-items: center;
+            justify-content: center;
+            padding:1rem 2rem;
+            width: 80%;
+        }
+    }
+    @media screen and (max-width:576px){
+        .loginSignup{
+            margin-right: 1rem;
+        }
+        .concertPhoto{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        #galleryPart2{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .concertSection p{
+            padding: 5rem 1rem;
+        }
+        .deviceContainer{
+            flex-direction: column;
+            align-items: center;
+        }
+        .devices{
+            width: 10%;
+        }
+        .footer1{
+            display: none;
+        }
+        .signup{
+            width: 150px;
+        }
+        footer{
+            padding: 3rem 0;
+        }
     }
 }
