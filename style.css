@@ -442,6 +442,17 @@ footer a:hover{
     @media screen and (max-width:576px){
         .loginSignup{
             margin-right: 1rem;
+            font-size: 0.7rem;
+        }
+        .login{
+            height: 30px;
+            line-height: 30px;
+           
+        }
+        .signup{
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
         }
         .concertPhoto{
             grid-template-columns: repeat(1, 1fr);
@@ -451,6 +462,11 @@ footer a:hover{
         }
         .concertSection p{
             padding: 5rem 1rem;
+        }
+       #nextConcertSection .planButton{
+            margin: 0;
+            padding-top: 0;
+            padding-bottom: 0;
         }
         .deviceContainer{
             flex-direction: column;
