@@ -28,6 +28,7 @@ ul{
     position: fixed;
     width: 99%;
     z-index: 2;
+    background-color: rgba(0, 0, 0, 0.24);
 
 }
 .logo{
@@ -85,10 +86,38 @@ nav{
 }
 .login:hover, .formWrapper a:hover{
     color: rgb(222, 84, 240);
-    
     transition: 700ms;
 }
 /* SECTION MAIN */
+.sectionMain{
+    
+}
+
+/* gallery section */
+.galleryConcert{
+    text-align: center;
+}
+
+#galleryPart2{
+    display: flex;
+    padding: 1rem 6rem;
+}
+
+#galleryPart2 p{
+    width:80%;
+    margin: 0 auto 18px auto;
+}
+
+.gallery img{
+    width: 10rem;
+}
+/*end of gallery section */
+
+/* concert secion */
+.concertPhoto{
+    display: grid;
+    grid-template-rows: ;
+}
 main{
     padding: 1% 0;
     margin: 1% 0;
@@ -96,18 +125,26 @@ main{
 .sectionMain{
     display: flex;
     margin-bottom: 10%;
-    padding-bottom: 10%;
+    padding-bottom: -1%;
     padding-top: 12%;
     justify-content: flex-end;
-    background-image: linear-gradient(45deg, rgb(222, 84, 240), rgb(71, 170, 251));
+    background-image: url(./images/concert.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .para{
     width: 50%;
     text-align: start;
 }
 .mainImg{
-    width: 40%;
+    width: 50%;
     justify-items: end;
+   align-content: flex-end;
+   
+}
+.mainImg img{
+
 }
 /* PLANS */
 .sectionContainer{
