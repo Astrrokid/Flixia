@@ -15,10 +15,7 @@ ul{
     list-style: none;
 }
 
-
 /* HEADER */
-
-
 
 .headerContainer{
     display: flex;
@@ -29,13 +26,14 @@ ul{
     width: 99%;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.24);
-
+    padding: 0px 3rem 12px 0;
 }
 .logo{
     width: 17%;
 }
 nav{
     width: 35%;
+    margin: 1rem 0 0 0;
 }
 
 .headerContainer ul{
@@ -59,9 +57,7 @@ nav{
     padding-top: 10px;
     gap: 1rem;
     text-align: end;
-    margin-right: 0;
-   
-   
+    margin-right: 2rem;
 }
 .login{
     width: 30%;
@@ -113,29 +109,92 @@ nav{
 }
 /*end of gallery section */
 
+/* next concerts section  */
+#nextConcertSection{
+    padding: 5rem 7rem;
+    border-radius: 10px;
+}
+
+.concert1{
+    display: flex;
+    background-color: rgb(29, 27, 27);
+    color: #fff;
+    text-align: left;
+   
+}
+.concert1:hover{
+    background-color: beige;
+    color: rgb(56, 53, 53);
+    transition: 700ms;
+}
+
+.concert1-A{
+    padding: 1rem 1.8rem;
+}
+
+.concert1-B{
+    display: flex;
+    gap: 1rem;
+    padding:  1.4rem 20px;
+}
+
+.concert1-C{
+    padding: 1rem 1rem;
+    width: 48%;
+}
+
+.concert1-D{
+    padding: 1rem 1.8rem;
+}
+.concert1-D h2{
+    color: rgb(86, 86, 184);
+}
+.concert1-E{
+    padding: 1rem 1.8rem;
+}
+
 /* concert secion */
+.concertSection{
+    text-align: center;
+    padding: 5rem 18rem;
+}
+
 .concertPhoto{
     display: grid;
-    grid-template-rows: ;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-row-gap: 1rem;
 }
-main{
-    padding: 1% 0;
-    margin: 1% 0;
+
+.planButton{
+    margin: 2rem 0;
 }
+
+/*end of concert secion */
+
 .sectionMain{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10%;
-    padding-bottom: -1%;
-    padding-top: 12%;
-    justify-content: flex-end;
+    padding: 12rem 4rem;
     background-image: url(./images/concert.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.para{
-    width: 50%;
-    text-align: start;
+
+.para h2{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.para p{  
+    width: 60%;
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 0 auto;
 }
 .mainImg{
     width: 50%;
@@ -143,9 +202,8 @@ main{
    align-content: flex-end;
    
 }
-.mainImg img{
 
-}
+
 /* PLANS */
 .sectionContainer{
     display: flex;
@@ -161,11 +219,15 @@ main{
     padding: 1%;
     border-radius: 35px;
     background-image: linear-gradient(45deg, rgb(222, 84, 240), rgb(71, 170, 251));
-    font-size: 0.92rem;
     padding-bottom: 2%;
 }
+
+#mid{
+    font-size: 1.3rem;
+}
+
 .trial{
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     
 }
 .planButton{
@@ -279,4 +341,14 @@ footer a:hover{
 }
 .contact a{
     padding-right: 1.5%;
+}
+
+/* media query */
+@media screen and (max-width:1200px){
+    .loginSignup{
+        margin-right: 9rem;
+    }
+    nav{
+        width: 20%;
+    }
 }
