@@ -172,6 +172,14 @@ nav{
 .planButton{
     margin: 2rem 0;
 }
+.con1a{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.conLast{
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
 
 /*end of concert secion */
 
