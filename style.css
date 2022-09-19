@@ -4,7 +4,6 @@ body{
     margin-top: 0rem;
     padding: 0;
     font-family: 'combo', sans-serif;
-    
 }
 
 html,body{
@@ -39,6 +38,7 @@ ul{
 nav{
     width: 35%;
     margin: 1rem 0 0 0;
+    font-weight: 700;
 }
 
 .headerContainer ul{
@@ -99,6 +99,7 @@ nav{
 
 #galleryPart2{
     display: grid;
+   
     grid-template-columns: repeat(3,1fr) ;
     padding: 1rem 12rem; 
 }
@@ -110,6 +111,10 @@ nav{
 
 .gallery img{
     width: 10rem;
+}
+.conSpace1{
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 /*end of gallery section */
 
@@ -160,7 +165,7 @@ nav{
 /* concert secion */
 .concertSection{
     text-align: center;
-    padding: 5rem 18rem;
+    padding: 5rem 25rem;
 }
 
 .concertPhoto{
